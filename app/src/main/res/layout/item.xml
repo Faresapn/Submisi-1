@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_film"
+        android:layout_width="97dp"
+        android:layout_height="137dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/poster_aquaman"
+        android:scaleType="fitXY"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="159dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="15dp"
+        android:text="Aquaman"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_film"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/releas"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:text="December 21, 2018"
+        app:layout_constraintBottom_toBottomOf="@+id/img_film"
+        app:layout_constraintStart_toEndOf="@+id/img_film" />
+
+
+</android.support.constraint.ConstraintLayout>
